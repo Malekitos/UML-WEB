@@ -165,6 +165,7 @@ border-radius: .5rem;
 }
 .container-info{
     font-size: 1.2rem;
+    filter: blur(2px);
 }
 
 .box-info{
@@ -176,4 +177,15 @@ border-radius: .5rem;
 
 .box-info li{
     margin: 1rem;
+}
+
+.container:hover{
+    border: var(--orange) 1px solid;
+    background-color: var(--black);
+    cursor: pointer;
+    filter: blur(0px);
+}
+
+.container-info:hover{
+    filter: blur(0px);
 }
