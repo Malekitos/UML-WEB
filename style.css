@@ -17,10 +17,12 @@ transition: .3s linear;
 :root{
 
 
---black: #000;
---orange: #FF5733;
+--black: #0C0C0C;
+--black2: #131b26;
+--orange: #f65718;
 --white: #fff;
 --borderRadius: .5rem;
+
 
 }
 
@@ -129,6 +131,7 @@ border-radius: .5rem;
     color: var(--white);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .uml-text{
@@ -148,3 +151,4 @@ border-radius: .5rem;
     justify-content: center;
     align-items: center;
 }
+
