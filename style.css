@@ -189,3 +189,47 @@ border-radius: .5rem;
 .container-info:hover{
     filter: blur(0px);
 }
+
+.question {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: var(--borderRadius);
+    border: 2px solid var(--white);
+    transition: ease .5s;
+    max-width: 35rem;
+    width: 100%;
+    color: var(--white);
+}
+
+.question button{
+    color: var(--white);
+    background: var(--black2);
+    padding: .5rem .8rem;
+    margin-right: .5rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+.correct {
+    border-color: greenyellow;  /* Зеленый для правильного ответа */
+}
+.incorrect {
+    border-color: red; /* Красный для неправильного ответа */
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#result{
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+    border-bottom: #f65718 solid 2px;
+    margin-top: 3rem;
+}

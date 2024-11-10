@@ -6,6 +6,10 @@
     <title>UML</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" ></script>
+
 </head>
 <body>
     
@@ -27,7 +31,63 @@
     
     
     </header>
+
+
+    <script>
+        AOS.init({
+        duration: 800,    // Длительность анимации по умолчанию (мс)
+        easing: 'ease', // Глобальная плавность анимаций
+        once: false,        // Анимация выполняется только один раз
+        // offset: 300        // Глобальный отступ
+    });
+
+    </script>
+
+   <section class="test">
+
+
+    <div class="question" id="question1" data-aos="fade">
+        <p>Какой язык используется для стилизации веб-страниц?</p>
+        <button onclick="checkAnswer('question1', 'CSS')">CSS</button>
+        <button onclick="checkAnswer('question1', 'JavaScript')">JavaScript</button>
+    </div>
     
+    <div class="question" id="question2"data-aos="fade">
+        <p>Какой язык является основным для программирования в браузере?</p>
+        <button onclick="checkAnswer('question2', 'JavaScript')">JavaScript</button>
+        <button onclick="checkAnswer('question2', 'Python')">Python</button>
+    </div>
+    
+    <div class="question" id="question3"data-aos="fade">
+        <p>Какой язык поддерживает работу с базами данных?</p>
+        <button onclick="checkAnswer('question3', 'SQL')">SQL</button>
+        <button onclick="checkAnswer('question3', 'HTML')">HTML</button>
+    </div>
+    
+    <div class="question" id="question4"data-aos="fade">
+        <p>Какой язык используется для серверного программирования?</p>
+        <button onclick="checkAnswer('question4', 'PHP')">PHP</button>
+        <button onclick="checkAnswer('question4', 'CSS')">CSS</button>
+    </div>
+    
+    <div class="question" id="question5"data-aos="fade">
+        <p>Какой язык поддерживает создание анимаций на веб-страницах?</p>
+        <button onclick="checkAnswer('question5', 'JavaScript')">JavaScript</button>
+        <button onclick="checkAnswer('question5', 'SQL')">SQL</button>
+    </div>
+    
+    <div class="question" id="question6"data-aos="fade">
+        <p>Какой язык используется для разметки веб-страниц?</p>
+        <button onclick="checkAnswer('question6', 'HTML')">HTML</button>
+        <button onclick="checkAnswer('question6', 'Python')">Python</button>
+    </div>
+    
+    <div id="result"></div>
+    
+    
+
+   </section>
+
 
 </body>
 </html>
