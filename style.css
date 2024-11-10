@@ -20,6 +20,7 @@ transition: .3s linear;
 --black: #000;
 --orange: #FF5733;
 --white: #fff;
+--borderRadius: .5rem;
 
 }
 
@@ -63,6 +64,7 @@ font-weight: bold;
 cursor: pointer;
 
 }
+
 
 .navbtn button:hover{
 
@@ -116,4 +118,33 @@ height: .3rem;
 width: 80%;
 border-radius: .5rem; 
 
+}
+
+
+.info img{
+    width: 100%;
+}
+
+.info-uml{
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+.uml-text{
+    max-width: 10rem;
+}
+
+.info-uml img{
+    width: 100%;
+    max-width: 40rem;
+    border: var(--orange) 1px solid;
+    border-radius: var(--borderRadius);
+    margin: 2rem;
+}
+
+.uml-block{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
