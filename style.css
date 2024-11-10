@@ -132,6 +132,7 @@ border-radius: .5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1rem;
 }
 
 .uml-text{
@@ -152,3 +153,27 @@ border-radius: .5rem;
     align-items: center;
 }
 
+.container{
+    max-width: 25rem;
+    background-color: #131b26;
+    padding: 2rem;
+    border-radius: var(--borderRadius);
+    margin-bottom: 5rem;
+}
+.container-virsraksts{
+    margin-bottom: 1rem;
+}
+.container-info{
+    font-size: 1.2rem;
+}
+
+.box-info{
+    color: white;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.box-info li{
+    margin: 1rem;
+}
