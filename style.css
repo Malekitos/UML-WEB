@@ -1,0 +1,119 @@
+
+
+
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+font-family: sans-serif;
+text-decoration: none;
+border: none;
+outline: none;
+transition: .3s linear;
+
+}
+
+
+:root{
+
+
+--black: #000;
+--orange: #FF5733;
+--white: #fff;
+
+}
+
+
+header{
+
+padding: 2.5rem 12%;
+background: var(--black);
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: .2rem solid var(--orange);  
+
+}
+
+.logo a{
+
+font-weight: bold;
+font-size: 2rem;
+color: var(--white);
+
+}
+
+.logo span{
+
+background: var(--orange);
+border-radius: .5rem;
+padding: .3rem .6rem;
+color: var(--black);
+
+}
+
+.navbtn button{
+
+color: var(--white);
+background: var(--black);
+padding: .5rem .8rem;
+margin-left: 1rem;
+border-radius: .5rem;
+font-weight: bold;
+cursor: pointer;
+
+}
+
+.navbtn button:hover{
+
+color: var(--black);
+background: var(--orange);
+padding: .5rem .8rem;
+margin-left: 1rem;
+border-radius: .5rem;
+
+}
+
+
+body{
+
+background: var(--black);
+
+}
+
+
+.sakums{
+
+padding: 6rem 15%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.logo-2{
+
+color: var(--white);
+font-weight: bold;
+font-size: 6rem;
+
+}
+
+
+.info{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.line{
+
+background: var(--orange);
+height: .3rem;
+width: 80%;
+border-radius: .5rem; 
+
+}
