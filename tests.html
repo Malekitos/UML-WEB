@@ -6,87 +6,109 @@
     <title>UML</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" ></script>
 
 </head>
 <body>
     
-    <header>
+<header>
 
-        <div class="logo">
-    
-            <a href="./">Uml <span>hub</span></a>
-    
+    <div class="logo">
+
+        <a href="./">Uml <span>hub</span></a>
+
+    </div>
+    <div class="navbtn">
+
+        <a href="index.html">Sākums</a>
+        <a href="activity.html">Aktivitāšu diagramma</a>
+        <a href="class.html">Klašu diagramma</a>
+        <a href="tests.html">Tests</a>
+
+    </div>
+
+
+</header>
+
+
+<script>
+    AOS.init({
+    duration: 800,    
+    easing: 'ease', 
+    once: false,              
+});
+
+</script>
+
+<section class="test">
+
+    <div class="activity">
+        <h1>Activity uml</h1>
+        <div class="test-jautajumi">
+
+            <div class="question" id="activity-question1" data-aos="fade-right">
+                <p>Kas ir UML aktivitāšu diagramma?</p>
+                <button onclick="checkAnswer('activity-question1', 'Diagramma, kas parāda procesu secību un darbību plūsmu')">Diagramma, kas parāda procesu secību un darbību plūsmu</button>
+                <button onclick="checkAnswer('activity-question1', 'Diagramma, kas parāda objektu attiecības sistēmā')">Diagramma, kas parāda objektu attiecības sistēmā</button>
+            </div>
+            
+            <div class="question" id="activity-question2" data-aos="fade-left">
+                <p>Kāds elements tiek izmantots, lai parādītu sākuma punktu aktivitāšu diagrammā?</p>
+                <button onclick="checkAnswer('activity-question2', 'Līnija')">Līnija</button>
+                <button onclick="checkAnswer('activity-question2', 'Melns aplis')">Melns aplis</button>
+            </div>
+            
+            <div class="question" id="activity-question3" data-aos="fade-right">
+                <p>Kāds ir lēmumu punkts aktivitāšu diagrammā?</p>
+                <button onclick="checkAnswer('activity-question3', 'Kvadrāts')">Kvadrāts</button>
+                <button onclick="checkAnswer('activity-question3', 'Rombs')">Rombs</button>
+            </div>
+            
+            <div class="question" id="activity-question4" data-aos="fade-left">
+                <p>Kāds elements tiek izmantots, lai parādītu darbību aktivitāšu diagrammā?</p>
+                <button onclick="checkAnswer('activity-question4', 'Taisnstūris')">Taisnstūris</button>
+                <button onclick="checkAnswer('activity-question4', 'Aplis')">Aplis</button>
+            </div>
+
         </div>
-        <div class="navbtn">
-    
-            <a href="index.html"><button>Sākums</button></a>
-            <a href="activity.html"><button>Aktivitāšu diagramma</button></a>
-            <a href="class.html"><button>Klašu diagramma</button></a>
-            <a href="tests.html"><button>Tests</button></a>
-    
+    </div>
+
+    <div class="klass">
+        <h1>Class uml</h1>
+        <div class="test-jautajumi">
+
+            <div class="question" id="class-question1" data-aos="fade-right">
+                <p>Kas raksturo UML klases diagrammu?</p>
+                <button onclick="checkAnswer('class-question1', 'Klases, to atribūti un metodes')">Klases, to atribūti un metodes</button>
+                <button onclick="checkAnswer('class-question1', 'Attiecības starp objektiem un to stāvokļiem')">Attiecības starp objektiem un to stāvokļiem</button>
+            </div>
+            
+            <div class="question" id="class-question2" data-aos="fade-left">
+                <p>Kas parāda klases īpašības UML klases diagrammā?</p>
+                <button onclick="checkAnswer('class-question2', 'Atributi')">Atributi</button>
+                <button onclick="checkAnswer('class-question2', 'Metodes')">Metodes</button>
+            </div>
+                
+            <div class="question" id="class-question3" data-aos="fade-right">
+                <p>Kas parāda klases uzvedību UML klases diagrammā?</p>
+                <button onclick="checkAnswer('class-question3', 'Atributi')">Atributi</button>
+                <button onclick="checkAnswer('class-question3', 'Metodes')">Metodes</button>
+            </div>
+            
+            <div class="question" id="class-question4" data-aos="fade-left">
+                <p>Kāds ir saistības attēlojums starp divām klasēm UML klases diagrammā?</p>
+                <button onclick="checkAnswer('class-question4', 'Līnija ar bultiņu')">Līnija ar bultiņu</button>
+                <button onclick="checkAnswer('class-question4', 'Līnija ar rombu')">Līnija ar rombu</button>
+            </div>
+
         </div>
-    
-    
-    </header>
-
-
-    <script>
-        AOS.init({
-        duration: 800,    // Длительность анимации по умолчанию (мс)
-        easing: 'ease', // Глобальная плавность анимаций
-        once: false,        // Анимация выполняется только один раз
-        // offset: 300        // Глобальный отступ
-    });
-
-    </script>
-
-   <section class="test">
-
-
-    <div class="question" id="question1" data-aos="fade">
-        <p>Какой язык используется для стилизации веб-страниц?</p>
-        <button onclick="checkAnswer('question1', 'CSS')">CSS</button>
-        <button onclick="checkAnswer('question1', 'JavaScript')">JavaScript</button>
     </div>
-    
-    <div class="question" id="question2"data-aos="fade">
-        <p>Какой язык является основным для программирования в браузере?</p>
-        <button onclick="checkAnswer('question2', 'JavaScript')">JavaScript</button>
-        <button onclick="checkAnswer('question2', 'Python')">Python</button>
-    </div>
-    
-    <div class="question" id="question3"data-aos="fade">
-        <p>Какой язык поддерживает работу с базами данных?</p>
-        <button onclick="checkAnswer('question3', 'SQL')">SQL</button>
-        <button onclick="checkAnswer('question3', 'HTML')">HTML</button>
-    </div>
-    
-    <div class="question" id="question4"data-aos="fade">
-        <p>Какой язык используется для серверного программирования?</p>
-        <button onclick="checkAnswer('question4', 'PHP')">PHP</button>
-        <button onclick="checkAnswer('question4', 'CSS')">CSS</button>
-    </div>
-    
-    <div class="question" id="question5"data-aos="fade">
-        <p>Какой язык поддерживает создание анимаций на веб-страницах?</p>
-        <button onclick="checkAnswer('question5', 'JavaScript')">JavaScript</button>
-        <button onclick="checkAnswer('question5', 'SQL')">SQL</button>
-    </div>
-    
-    <div class="question" id="question6"data-aos="fade">
-        <p>Какой язык используется для разметки веб-страниц?</p>
-        <button onclick="checkAnswer('question6', 'HTML')">HTML</button>
-        <button onclick="checkAnswer('question6', 'Python')">Python</button>
-    </div>
-    
+
     <div id="result"></div>
-    
-    
 
-   </section>
+</section>
+
 
 
 </body>

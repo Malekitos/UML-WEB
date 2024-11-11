@@ -6,7 +6,6 @@
     <title>UML</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" ></script>
 
@@ -21,11 +20,11 @@
     
         </div>
         <div class="navbtn">
-    
-            <a href="index.html"><button>Sākums</button></a>
-            <a href="activity.html"><button>Aktivitāšu diagramma</button></a>
-            <a href="class.html"><button>Klašu diagramma</button></a>
-            <a href="tests.html"><button>Tests</button></a>
+
+            <a href="index.html">Sākums</a>
+            <a href="activity.html">Aktivitāšu diagramma</a>
+            <a href="class.html">Klašu diagramma</a>
+            <a href="tests.html">Tests</a>
     
         </div>
     
@@ -34,94 +33,96 @@
 
     <script>
         AOS.init({
-        duration: 800,    // Длительность анимации по умолчанию (мс)
-        easing: 'ease', // Глобальная плавность анимаций
-        once: false,        // Анимация выполняется только один раз
-        // offset: 300        // Глобальный отступ
-});
-
+        duration: 800,    
+        easing: 'ease', 
+        once: false,        
+    });
     </script>
 
-    <section class="info-uml" >
-    
-        <div class="uml-block ">
-
-            <div class="uml-text" data-aos="fade-right">
-    
-                <h1>Picerija</h1>
-                <p>Diagramma parāda galvenās klases picas darbnīcas pārvaldībai, piemēram, Pizza, Pasūtījums, Klients un Darbinieks. Diagramma palīdz automatizēt picas pasūtīšanas un sagatavošanas procesu.
-                </p>
-
-            </div>
-    
-            <div class="img" data-aos="fade-left">
+        <div class="uml-infos">
+            
+        <section class="info-uml" >
         
-                <img src="image/uml-class.png" alt="">
+            <div class="uml-block ">
+
+                <div class="uml-text" data-aos="fade-right">
         
-            </div>
+                    <h1>Picerija</h1>
+                    <p>Diagramma parāda galvenās klases picas darbnīcas pārvaldībai, piemēram, Pizza, Pasūtījums, Klients un Darbinieks. Diagramma palīdz automatizēt picas pasūtīšanas un sagatavošanas procesu.
+                    </p>
 
-        </div>
-
-        <div class="uml-block">
-
-            <div class="uml-text" data-aos="fade-right" data-aos-offset="450">
-    
-                <h1>Datora klubs</h1>
-                <p> diagramma attēlo klases datoru kluba pārvaldībai, piemēram, Dators, Rezervācija, Dalībnieks un Darbinieks. Diagramma palīdz pārvaldīt rezervācijas un datoru izmantošanu klubā.
-                </p>
-
+                </div>
         
+                <div class="img" data-aos="fade-left">
+            
+                    <img src="image/uml-class.png" alt="">
+            
+                </div>
+
             </div>
-    
-            <div class="img" data-aos="fade-left" data-aos-offset="600">
+
+            <div class="uml-block">
+
+                <div class="uml-text" data-aos="fade-right" data-aos-offset="450">
         
-                <img src="image/uml-class2.png" alt="">
+                    <h1>Datora klubs</h1>
+                    <p> diagramma attēlo klases datoru kluba pārvaldībai, piemēram, Dators, Rezervācija, Dalībnieks un Darbinieks. Diagramma palīdz pārvaldīt rezervācijas un datoru izmantošanu klubā.
+                    </p>
+
+            
+                </div>
         
+                <div class="img" data-aos="fade-left" data-aos-offset="600">
+            
+                    <img src="image/uml-class2.png" alt="">
+            
+                </div>
+
             </div>
 
+        </section>
+
+        <div class="box-info" data-aos="fade" data-aos-offset="500">
+            <div class="container">
+                <div class="container-virsraksts">
+                    <h1>Modeļa daļa</h1>
+                </div>
+                <div class="container-info">
+                    <p>Klases diagramma ir daļa no struktūras modeļa. Tā rāda, kādas klases ir sistēmā, kādas ir to īpašības un metodes, un kā tās savstarpēji mijiedarbojas.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-virsraksts">
+                    <h1>Mērķis</h1>
+                </div>
+                <div class="container-info">
+                    <p>Tā ir paredzēta, lai modelētu un dokumentētu sistēmas struktūru un parādītu, kā dati tiek glabāti un apstrādāti sistēmā</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-virsraksts">
+                    <h1>Kādu problēmu tā risina</h1>
+                </div>
+                <div class="container-info">
+                    <p>Klases diagramma risina problēmas, kas saistītas ar sistēmas datu struktūras izpratni un izstrādi. Tā tiek izmantota, lai:
+                        <ul>
+                            <li>Attēlotu klases un to īpašības, metodes.</li>
+                            <li>Parādītu attiecības starp klasēm</li>
+                            <li>Izstrādātu sistēmas struktūru un palīdzētu saprast, kā dati tiks glabāti un manipulēti.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container-virsraksts">
+                    <h1>Kādās situācijās to izmanto</h1>
+                </div>
+                <div class="container-info">
+                    <p>Klases diagrammas ir noderīgas projektēšanas un analīzes fāzēs, kad ir nepieciešams precīzi izprast sistēmas komponentes un to savstarpējo saistību.</p>
+                </div>
+            </div>
         </div>
 
-    </section>
-
-    <div class="box-info" data-aos="fade" data-aos-offset="500">
-        <div class="container">
-            <div class="container-virsraksts">
-                <h1>Modeļa daļa</h1>
-            </div>
-            <div class="container-info">
-                <p>Klases diagramma ir daļa no struktūras modeļa. Tā rāda, kādas klases ir sistēmā, kādas ir to īpašības un metodes, un kā tās savstarpēji mijiedarbojas.</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="container-virsraksts">
-                <h1>Mērķis</h1>
-            </div>
-            <div class="container-info">
-                <p>Tā ir paredzēta, lai modelētu un dokumentētu sistēmas struktūru un parādītu, kā dati tiek glabāti un apstrādāti sistēmā</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="container-virsraksts">
-                <h1>Kādu problēmu tā risina</h1>
-            </div>
-            <div class="container-info">
-                <p>Klases diagramma risina problēmas, kas saistītas ar sistēmas datu struktūras izpratni un izstrādi. Tā tiek izmantota, lai:
-                    <ul>
-                        <li>Attēlotu klases un to īpašības, metodes.</li>
-                        <li>Parādītu attiecības starp klasēm</li>
-                        <li>Izstrādātu sistēmas struktūru un palīdzētu saprast, kā dati tiks glabāti un manipulēti.</li>
-                    </ul>
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="container-virsraksts">
-                <h1>Kādās situācijās to izmanto</h1>
-            </div>
-            <div class="container-info">
-                <p>Klases diagrammas ir noderīgas projektēšanas un analīzes fāzēs, kad ir nepieciešams precīzi izprast sistēmas komponentes un to savstarpējo saistību.</p>
-            </div>
-        </div>
     </div>
 
 </body>

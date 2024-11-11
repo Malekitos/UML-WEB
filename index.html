@@ -7,6 +7,8 @@
     <title>UMLHUb</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" ></script>
 </head>
 
 <body>
@@ -21,10 +23,10 @@
 
     <div class="navbtn">
 
-        <a href="index.html"><button>Sākums</button></a>
-        <a href="activity.html"><button>Aktivitāšu diagramma</button></a>
-        <a href="class.html"><button>Klašu diagramma</button></a>
-        <a href="tests.html"><button>Tests</button></a>
+        <a href="index.html">Sākums</a>
+        <a href="activity.html">Aktivitāšu diagramma</a>
+        <a href="class.html">Klašu diagramma</a>
+        <a href="tests.html">Tests</a>
 
     </div>
 
@@ -32,17 +34,24 @@
 
 </header>
 
+<script>
+AOS.init({
+duration: 800,    
+easing: 'ease', 
+once: false,        
+});
+</script>
 
 <section class="sakums">
 
-    <div class="logo-2">
+    <div class="logo-2" data-aos="fade-right">
 
-        <p>DZONLOX</p>
-        <p>Diagramas</p>
+        <p>UML</p>
+        <p>Diagrammas</p>
         
     </div>
 
-    <div class="img">
+    <div class="img" data-aos="fade-left">
 
         <img src="image/uml.drawio.png" alt="">
 
@@ -53,7 +62,53 @@
 
 <section class="info">
 
-    <div class="line"></div>
+    <div class="line">
+
+        <h1>Šī mājas lapa ir izveidota, lai iepazīstinātu jūs ar UML aktivitāšu un UML klases diagrammām</h1>
+
+    </div>
+
+    <div class="info-container">
+
+        <div class="inf-box" data-aos="fade-right">
+
+            <h1>Kas ir UML diagrammas?</h1>
+
+            <p>UML diagrammas ir grafiski attēlojumi, kas izmanto vienotu modelēšanas valodu, lai vizualizētu, aprakstītu un dokumentētu sistēmu struktūru un uzvedību programmatūras izstrādē. </p>
+
+        </div>
+
+        <div class="inf-box" id="second-box" data-aos="fade-left">
+
+            <h1>UML diagrammas ir nepieciešamas, lai</h1>
+
+            <p><span>1. Vizualizētu sistēmas struktūru un darbību</span> — tās palīdz saprast sistēmas komponentus un attiecības starp tiem, padarot sarežģītas sistēmas vieglāk saprotamas.<br>
+                <br>
+                <span>2. Dokumentētu programmatūru</span> — UML diagrammas nodrošina skaidru dokumentāciju, kas ir noderīga gan izstrādes procesā, gan arī sistēmas uzturēšanai un attīstīšanai nākotnē.<br>
+               <br>
+               <span>3. Komunicētu ar komandu</span> — tās atvieglo informācijas apmaiņu starp komandas dalībniekiem (izstrādātājiem, testētājiem, projektu vadītājiem), nodrošinot vienotu izpratni par sistēmas arhitektūru un procesiem.<br>
+               <br>
+               <span>4. Plānotu un analizētu sistēmu</span> — UML diagrammas ļauj efektīvi plānot sistēmas izveidi, identificējot nepieciešamās funkcijas, lietotāju darbības un saistītos procesus.<br>
+               <br>
+               <span>5. Atvieglotu sistēmas modifikācijas un uzlabojumus</span> — labi izstrādātas UML diagrammas palīdz ātri identificēt, kā izmaiņas vienā komponentā ietekmēs pārējo sistēmu, tādējādi samazinot kļūdu iespējamību izstrādē un uzlabojumos.</p>
+            
+        </div>
+
+        <div class="inf-box" data-aos="fade-right">
+
+            <h1>UML diagrammas tiek pielietotas</h1>
+
+            <p>UML diagrammas tiek pielietotas dažādās jomās un situācijās, kur nepieciešama skaidra un strukturēta sistēmu modelēšana. Šeit ir galvenās jomas, kur tās izmanto:<br>
+                <br>
+                <span>1. Programmatūras izstrāde</span> — UML diagrammas ir standarts programmatūras arhitektūras vizualizācijai, un tās tiek izmantotas, lai definētu prasības, plānotu struktūru un modelētu lietotāju darbības.<br>
+                <br>
+                <span>2. Datubāžu dizains</span> — UML diagrammas (piemēram, klases diagrammas) palīdz modelēt datu struktūru, izveidot tabulas, kā arī identificēt datu attiecības un integritātes ierobežojumus.<br>
+                <br>
+                <span>3. Biznesa procesu modelēšana</span> — aktivitāšu un secību diagrammas ir noderīgas, lai attēlotu biznesa procesu plūsmu un noteiktu, kā sistēmai jāreaģē uz dažādiem lietotāju ievades datiem vai notikumiem.</p>
+            
+        </div>
+
+    </div>
 
 </section>
 

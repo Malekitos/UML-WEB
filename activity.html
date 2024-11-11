@@ -6,6 +6,9 @@
     <title>UML</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" ></script>
+
 </head>
 <body>
     
@@ -13,21 +16,117 @@
 
         <div class="logo">
     
-            <a href="./">Uml <span>hub</span></a>
+            <a href="./">Uml<span>hub</span></a>
     
         </div>
         <div class="navbtn">
-    
-            <a href="index.html" class="nav-link"><button>Sākums</button></a>
-            <a href="activity.html" class="nav-link"><button>Aktivitāšu diagramma</button></a>
-            <a href="class.html" class="nav-link"><button>Klašu diagramma</button></a>
-            <a href="tests.html" class="nav-link"><button>Tests</button></a>
+
+            <a href="index.html">Sākums</a>
+            <a href="activity.html">Aktivitāšu diagramma</a>
+            <a href="class.html">Klašu diagramma</a>
+            <a href="tests.html">Tests</a>
     
         </div>
     
 
     </header>
-    
 
+    <script>
+        AOS.init({   
+        easing: 'ease', 
+        once: false,        
+        });
+    </script>
+
+
+    <section class="activity-uml">
+
+        <div class="text-uml"  data-aos="fade-left" data-aos-delay="200">
+
+            <H1>Picerija</H1>
+
+            <p>Diagramma parāda galvenās darbības picas pasūtīšanas un piegādes procesā, piemēram, Klients, Pasūtījums, Pica, Pārdevējs un Kurjers. Diagramma palīdz automatizēt picas pasūtīšanas, sagatavošanas un piegādes procesu, nodrošinot ātrāku un efektīvāku apkalpošanu.</p>
+
+        </div>
+
+        <div class="img-uml" id="activity1"  data-aos="fade-right">
+
+            <img src="image/Activity-2.drawio.png" id="samllfoto" alt="" data-aos-delay="400">
+
+        </div>
+
+    </section>
+
+    <section class="activity-uml-2">
+
+
+        <div class="text-uml" data-aos="fade-left" data-aos-delay="600">
+
+            <H1>Datora Klubs</H1>
+
+            <p>Diagramma parāda galvenos soļus datoru nomas procesā spēlēšanai, piemēram, Klients, Dators, Tarpiks, Maksājums un Administrators. Diagramma palīdz pārvaldīt datoru pieejamību un nodrošināt raitāku un organizētāku klientu apkalpošanu, optimizējot spēļu sesijas un maksājumu procesus.</p>
+
+        </div>
+
+        <div class="img-uml" id="activity2" data-aos="fade-right" data-aos-delay="800">
+
+            <img src="image/Activity.drawio.png" alt="">
+
+        </div>
+
+        <div class="info-box" data-aos="fade" data-aos-offset="200">
+
+            <div class="box-container">
+
+                <div class="box">
+
+                    <h1>Mērķis</h1>
+
+                    <div class="blure">
+
+                        <p>UML aktivitāšu diagramma tiek izmantota, lai parādītu procesa vai darba plūsmas secību un darbību norisi sistēmā. Tā palīdz vizualizēt, kā notiek dažādas darbības, kā tās savstarpēji saistītas un kādi lēmumi tiek pieņemti procesā. Šāda diagramma ir noderīga, lai modelētu biznesa procesus, algoritmus vai jebkuru darbību secību, nodrošinot labāku izpratni un efektīvāku sistēmu projektēšanu.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="box" id="sim">
+
+                    <h1>Simboli</h1>
+
+                    <img src="image/apraksti.drawio.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="modal-umlfoto" id="modal-activity1">
+
+        <img src="image/Activity-2.drawio.png" id="close-modal1" alt="">
+
+    </div>
+
+    <div class="modal-umlfoto" id="modal-activity2">
+
+        <img src="image/activity.drawio.png" id="close-modal2" alt="">
+
+    </div>
+
+    <div class="sim-modal" id="sim-modal">
+
+        <div class="boxx" id="close-simmodal">
+
+            <h1>Simboli</h1>
+
+            <img src="image/apraksti.drawio.png" alt="">
+
+        </div>
+
+    </div>
+    
 </body>
 </html>
